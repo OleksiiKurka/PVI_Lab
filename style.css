@@ -1,0 +1,51 @@
+td {
+  width: 6em;
+  height: 6em;
+  border: 1px solid black;
+}
+
+td img {
+  width: 5.5em;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cell-white {
+  background-color: rgb(253, 207, 158, 1);
+}
+.cell-white:hover{
+    background-color: rgb(102, 55, 8);
+}
+
+.cell-black {
+  background-color: rgb(209, 139, 70, 1);
+}
+.cell-black:hover{
+    background-color: rgb(102, 55, 8);
+}
+
+.tr-top th {
+  text-align: center;
+  padding-bottom: 0.5em;
+  padding-top: 0.5em;
+  font-size: 2em;
+}
+.th-side {
+  text-align: center;
+  padding-right: 0.5em;
+  padding-left: 0.5em;
+  font-size: 2em;
+}
+
+.Table {
+  background-color: rgba(207, 100, 38, 0.274);
+  border-radius: 20px;
+  padding: 0em 1em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+  border: 2px solid black;
+  border-spacing: 0;
+}
