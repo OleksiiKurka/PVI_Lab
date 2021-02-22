@@ -3,10 +3,10 @@ td {
   height: 6em;
   border: 1px solid black;
 }
-body{
-  background-image: url('img/back.png');
+body {
+  background-image: url("img/back.png");
   background-repeat: no-repeat;
-  background-attachment: fixed;  
+  background-attachment: fixed;
   background-size: cover;
 }
 td img {
@@ -46,7 +46,7 @@ td img {
 
 .Table {
   /*background-color: rgba(207, 100, 38, 0.274);*/
-  background-color: rgba(242, 212, 195,1);
+  background-color: rgba(242, 212, 195, 1);
   border-radius: 20px;
   padding: 0em 1em;
   margin-left: auto;
@@ -57,43 +57,47 @@ td img {
 }
 
 .form-div {
-  width: 54em;
-  margin: auto;
-  margin-top: 3em;
-  border: 1px solid black;
-  padding: 2em;
-  border-radius: 20px;
-  background-color: rgba(242, 212, 195,1);
+  display: flex;
   /*background-color: rgba(207, 100, 38, 0.1);;*/
+  width: 52em;
+  border: 1px solid black;
+  margin: auto;
+  margin-top: 2em;
+  border-radius: 20px;
+  background-color: rgba(242, 212, 195, 1);
+  padding: 3em
 }
+
+@media screen and (max-width: 600px) {
+  .form-div {
+    width: 48em;
+  }
+}
+
 .form-div .form-div-textbox {
   display: inline-block;
-  width: 79%;
+  width: 73%;
 }
 .form-div .form-div-textbox .input-field {
   font-size: 1.5em;
-  width: 100%;
+  width: 99%;
   border-radius: 5px;
   margin-top: 1em;
 }
-
 .form-div .form-div-radio {
   display: inline-block;
-  width: 20%;
- /* border: 1px solid black;*/
-
+  width: 25%;
 }
 .form-div .form-div-radio .radio-lable {
   font-size: 2em;
   margin-top: 0;
   display: block;
-  
 }
+
 .form-div .button-div {
   height: 3em;
   padding-top: 1em;
 }
-
 .form-div .button-submit {
   display: inline-block;
   padding: 15px 25px;
@@ -117,13 +121,12 @@ td img {
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
-
-.form-div .form-a{
+.form-div .form-a {
   color: green;
   text-decoration: none;
   margin-left: 3em;
   margin-top: 0.5em;
 
   font-size: 1.7em;
-  float:right;
+  float: right;
 }
