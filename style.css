@@ -3,7 +3,12 @@ td {
   height: 6em;
   border: 1px solid black;
 }
-
+body{
+  background-image: url('img/back.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+}
 td img {
   width: 5.5em;
   height: auto;
@@ -15,15 +20,15 @@ td img {
 .cell-white {
   background-color: rgb(253, 207, 158, 1);
 }
-.cell-white:hover{
-    background-color: rgb(102, 55, 7);
+.cell-white:hover {
+  background-color: rgb(102, 55, 7);
 }
 
 .cell-black {
   background-color: rgb(209, 139, 70, 1);
 }
-.cell-black:hover{
-    background-color: rgb(102, 55, 8);
+.cell-black:hover {
+  background-color: rgb(102, 55, 8);
 }
 
 .tr-top th {
@@ -40,12 +45,85 @@ td img {
 }
 
 .Table {
-  background-color: rgba(207, 100, 38, 0.274);
+  /*background-color: rgba(207, 100, 38, 0.274);*/
+  background-color: rgba(242, 212, 195,1);
   border-radius: 20px;
   padding: 0em 1em;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 5%;
+  margin-top: 1em;
   border: 2px solid black;
   border-spacing: 0;
+}
+
+.form-div {
+  width: 54em;
+  margin: auto;
+  margin-top: 3em;
+  border: 1px solid black;
+  padding: 2em;
+  border-radius: 20px;
+  background-color: rgba(242, 212, 195,1);
+  /*background-color: rgba(207, 100, 38, 0.1);;*/
+}
+.form-div .form-div-textbox {
+  display: inline-block;
+  width: 79%;
+}
+.form-div .form-div-textbox .input-field {
+  font-size: 1.5em;
+  width: 100%;
+  border-radius: 5px;
+  margin-top: 1em;
+}
+
+.form-div .form-div-radio {
+  display: inline-block;
+  width: 20%;
+ /* border: 1px solid black;*/
+
+}
+.form-div .form-div-radio .radio-lable {
+  font-size: 2em;
+  margin-top: 0;
+  display: block;
+  
+}
+.form-div .button-div {
+  height: 3em;
+  padding-top: 1em;
+}
+
+.form-div .button-submit {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4caf50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+.form-div .button-submit:hover {
+  background-color: #3e8e41;
+}
+
+.form-div .button-submit:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.form-div .form-a{
+  color: green;
+  text-decoration: none;
+  margin-left: 3em;
+  margin-top: 0.5em;
+
+  font-size: 1.7em;
+  float:right;
 }
