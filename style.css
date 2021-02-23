@@ -58,41 +58,40 @@ td img {
 }
 
 .form-div {
-  display: flex;
-  /*background-color: rgba(207, 100, 38, 0.1);;*/
-  width: 52em;
+  width: 58em;
   border: 1px solid black;
   margin: auto;
   margin-top: 2em;
   border-radius: 20px;
   background-color: rgba(242, 212, 195, 1);
-  padding: 3em
 }
 
-@media screen and (max-width: 600px) {
-  .form-div {
-    width: 48em;
-  }
-}
+
+
 
 .form-div .form-div-textbox {
-  display: inline-block;
-  width: 73%;
+  display: block;
+  width: 100%;
+  border-radius: 10px;
 }
 .form-div .form-div-textbox .input-field {
   font-size: 1.5em;
-  width: 99%;
-  border-radius: 5px;
-  margin-top: 1em;
+  width: 95%;
+
+  margin: 0.5em;
+  background-color: rgba(242, 212, 195, 1);
+  border: none;
+  border-bottom: 2px solid black;
 }
-.form-div .form-div-radio {
-  display: inline-block;
-  width: 25%;
-}
-.form-div .form-div-radio .radio-lable {
-  font-size: 2em;
-  margin-top: 0;
-  display: block;
+
+.options {
+  font-size: 1.5em;
+  width: 95%;
+
+  margin: 0.5em;
+  background-color: rgba(242, 212, 195, 1);
+  border: none;
+  border-bottom: 2px solid black;
 }
 
 .form-div .button-div {
@@ -100,7 +99,8 @@ td img {
   padding-top: 1em;
 }
 .form-div .button-submit {
-  display: inline-block;
+  display: block;
+  margin: auto;
   padding: 15px 25px;
   font-size: 24px;
   cursor: pointer;
@@ -122,12 +122,33 @@ td img {
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
-.form-div .form-a {
-  color: green;
-  text-decoration: none;
-  margin-left: 3em;
-  margin-top: 0.5em;
 
+
+
+
+.link-div{
+  width: 52em;
+  border: 1px solid black;
+  margin: auto;
+  margin-top: 1em;
+  border-radius: 20px;
+  background-color: rgb(242, 212, 195);
+  padding: 1em 3em
+}
+.link-div .form-a {
+  color: green;
+  display: block;
+  text-decoration: none;
+  margin: auto;
+  text-align: center;
   font-size: 1.7em;
-  float: right;
+  
+}
+@media screen and (max-width: 600px) {
+  .form-div {
+    width: 54em;
+  }
+  .link-div{
+    width: 48em;
+  }
 }
