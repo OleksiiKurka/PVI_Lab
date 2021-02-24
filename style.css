@@ -1,14 +1,16 @@
-td {
-  width: 6em;
-  height: 6em;
-  border: 1px solid black;
-}
-
 body {
   background-image: url("img/back.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+}
+
+
+
+td {
+  width: 6em;
+  height: 6em;
+  border: 1px solid black;
 }
 td img {
   width: 5.5em;
@@ -17,21 +19,18 @@ td img {
   margin-left: auto;
   margin-right: auto;
 }
-
 .cell-white {
   background-color: rgb(253, 207, 158, 1);
 }
 .cell-white:hover {
   background-color: rgb(102, 55, 7);
 }
-
 .cell-black {
   background-color: rgb(209, 139, 70, 1);
 }
 .cell-black:hover {
   background-color: rgb(102, 55, 8);
 }
-
 .tr-top th {
   text-align: center;
   padding-bottom: 0.5em;
@@ -44,7 +43,6 @@ td img {
   padding-left: 0.5em;
   font-size: 2em;
 }
-
 .Table {
   /*background-color: rgba(207, 100, 38, 0.274);*/
   background-color: rgba(242, 212, 195, 1);
@@ -57,6 +55,10 @@ td img {
   border-spacing: 0;
 }
 
+
+
+
+
 .form-div {
   width: 58em;
   border: 1px solid black;
@@ -65,10 +67,6 @@ td img {
   border-radius: 20px;
   background-color: rgba(242, 212, 195, 1);
 }
-
-
-
-
 .form-div .form-div-textbox {
   display: block;
   width: 100%;
@@ -83,7 +81,6 @@ td img {
   border: none;
   border-bottom: 2px solid black;
 }
-
 .options {
   font-size: 1.5em;
   width: 95%;
@@ -93,7 +90,6 @@ td img {
   border: none;
   border-bottom: 2px solid black;
 }
-
 .form-div .button-div {
   height: 3em;
   padding-top: 1em;
@@ -116,7 +112,6 @@ td img {
 .form-div .button-submit:hover {
   background-color: #3e8e41;
 }
-
 .form-div .button-submit:active {
   background-color: #3e8e41;
   box-shadow: 0 5px #666;
@@ -144,6 +139,8 @@ td img {
   font-size: 1.7em;
   
 }
+
+
 @media screen and (max-width: 600px) {
   .form-div {
     width: 54em;
