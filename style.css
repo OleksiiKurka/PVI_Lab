@@ -59,66 +59,6 @@ td img {
 
 
 
-.form-div {
-  width: 58em;
-  border: 1px solid black;
-  margin: auto;
-  margin-top: 2em;
-  border-radius: 20px;
-  background-color: rgba(242, 212, 195, 1);
-}
-.form-div .form-div-textbox {
-  display: block;
-  width: 100%;
-  border-radius: 10px;
-}
-.form-div .form-div-textbox .input-field {
-  font-size: 1.5em;
-  width: 95%;
-
-  margin: 0.5em;
-  background-color: rgba(242, 212, 195, 1);
-  border: none;
-  border-bottom: 2px solid black;
-}
-.options {
-  font-size: 1.5em;
-  width: 95%;
-
-  margin: 0.5em;
-  background-color: rgba(242, 212, 195, 1);
-  border: none;
-  border-bottom: 2px solid black;
-}
-.form-div .button-div {
-  height: 3em;
-  padding-top: 1em;
-}
-.form-div .button-submit {
-  display: block;
-  margin: auto;
-  padding: 15px 25px;
-  font-size: 24px;
-  cursor: pointer;
-  text-align: center;
-  text-decoration: none;
-  outline: none;
-  color: #fff;
-  background-color: #4caf50;
-  border: none;
-  border-radius: 15px;
-  box-shadow: 0 9px #999;
-}
-.form-div .button-submit:hover {
-  background-color: #3e8e41;
-}
-.form-div .button-submit:active {
-  background-color: #3e8e41;
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
-}
-
-
 
 
 .link-div{
@@ -141,11 +81,12 @@ td img {
 }
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 950px) {
   .form-div {
     width: 54em;
   }
   .link-div{
     width: 48em;
   }
+
 }

@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style_for_model.css">
 </head>
 
 <body>
+
     <table class="Table">
         <tr class="tr-top">
             <th></th>
@@ -131,29 +133,59 @@
         </tr>
     </table>
 
-  
-    <div class="form-div">
-        <form style="width: auto; margin: 3em;">
-            <div class="form-div-textbox">
-                <input class="input-field" type="email" placeholder="email">
-                <input class="input-field" type="text" placeholder="First name">
-                <input class="input-field" type="text" placeholder="Second name">
-                <select class="options">
-                    <option value="Easy">Easy</option>
-                    <option value="Medium">Medium</option>
-                    <option value="Hard">Hard</option>
-                    <option value="Very hard">Very hard</option>
-                </select>
+
+
+
+
+    <div class="link-div">
+
+        <button class="button-submit" style="margin-top: 0.5em; margin-bottom: 0.5em;" onclick="showModal()">REGISTER</button>
+
+
+        <div id="openModal" class="modalDialog">
+            <div class="form-model">
+
+                <button class="close" onclick="closeModal()">X</button>
+
+                <div class="modal-card-img">
+                    <img src="img/backformodel.jpg">
+                </div>
+                <div  class="modal-card-form ">
+                    <form id="myForm" onsubmit="return false;">
+                        <div class="input-div">
+                            <h2 class="input-title">Registration Info</h2>
+                            <input class="card-input" type="text" placeholder="Name" required>
+                            <input class="card-input" type="email" placeholder="Email" required>
+                            <input class="card-input" id="password" type="password" placeholder="Password" required>
+                            <input class="card-input" id="confirm_password" type="password"
+                                placeholder="Confirm password" required>
+
+                            <select class="card-input" name="levelOfdifficulty" id="difficulty">
+                                <option value="Beginner">Beginner</option>
+                                <option value="Intemediate">Intemediate</option>
+                                <option value="Advanced">Advanced</option>
+                            </select>
+                            <textarea class="card-input textarea" rows="3" placeholder="About yourself"></textarea>
+                            <label for="radio_1">
+                                <input type="radio" checked="checked" name="radio" value="Male" id="radio_1" />
+                                Male
+                            </label>
+                            <label for="radio_2">
+                                <input type="radio" name="radio" value="Female" id="radio_2" />
+                                Female
+                            </label>
+
+
+                            <button class="button-submit" onclick="submitVal(event)" type="submit">Start game</button>
+                        </div>
+                    </form>
+                </div>
             </div>
+        </div>
 
-            <div class="button-div">
 
-                <button class="button-submit" type="submit">Start game</button>
-
-            </div>
-
-        </form>
     </div>
+
     <div class="link-div">
         <a target="_blank" href="https://www.chess.com/lessons" class="form-a">Головомка</a>
         <a target="_blank" href="https://www.chess.com/puzzles/problems" class="form-a">Інформація про
